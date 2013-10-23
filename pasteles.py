@@ -21,11 +21,12 @@ def esRico(pastel):
         #Si hay 2 ingredientes en esta fila y uno es la "masita", entonces el pastel es rico
         elif distinctTiles == 2 and 'm' in row_ingredients:
             return True
-    #Si no hay niguna fila que haga el pastel
+    #Si no hay niguna fila que haga el pastel rico, es feo
     return False
 
 '''
-Permutations me devuelve todas las permutaciones de 9 de los 10 elementos de la lista.
+Permutations me devuelve todas las permutaciones de 9 de los 10 elementos de la lista (d= dulces,
+f= frutas, c= confites, m=masita).
 En principio, permutations no repite elementos de la lista. Pero como los elementos de la lista estan 
 repetidos, es necesario filtrar las tortas repetidas. Para eso sirve set, que solo mantiene elementos 
 distintos.
